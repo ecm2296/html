@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML</title>
+<meta charset="UTF-8">
+<meta name="keywords" content="JS,CSS,HTML">
+<meta name="Author" content="ECM">
+
+<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+<style>
+table, th, td {
+  border: 1px solid;
+}
+
+table {
+  width: 50%;
+}
+</style>
+</head>
+<body>
+  <h2> Ingreso de alumno</h2>
+  <label for="name">Nombre: </label>
+  <input type="text" id="name" ><br><br>
+  <label for="ape">Apellidos: </label>
+  <input type="text" id="ape" ><br><br>
+  <label for="age">Edad:</label>
+  <input type="text" id="age" ><br><br>
+  <label for="mat">Materia</label>
+  <select name="mat" id="mat">
+  <option value="Español">Español</option>
+  <option value="Ingles">Ingles</option>
+  <option value="Historia">Historia</option>
+  <option value="Geografia">Geografia</option>
+  <option value="Ciencia">Ciencia</option>
+  <option value="Danza">Danza</option>
+  <option value="Artes">Artes</option>
+  <option value="Frances">Frances</option>
+</select><br><br>
+  <label for="dir">Dirección:</label>
+  <input type="text" id="dir" ><br><br>
+  <label for="tel">Telefono (10 digitos):</label>
+  <input type="text" id="tel" ><br><br>
+  <button id="sub" onclick="data();">Subir</button>
+  <script>
+    function data() {
+      var a = document.getElementById("name").value;
+      var b = document.getElementById("ape").value;
+      var c = document.getElementById("age").value;
+      var d = document.getElementById("mat").value;
+      var e = document.getElementById("dir").value;
+      var f = document.getElementById("tel").value;
+      if (a=="") {       
+        alert("debe llenar todos los campos");
+      }
+
+  </script>
+  <section>
+    <h2> CONSULTA</h2>
+    <table>
+    <thead>
+      <tr>
+      <th>Nombre</th>
+      <th>Apellidos</th>
+      <th>Edad</th>
+      <th>Materia</th>
+      <th>Dirección</th>
+      <th>Telefono</th>
+      </tr>
+      </thead>
+    </table>
+   </section>
+
+</body>
+</html>
